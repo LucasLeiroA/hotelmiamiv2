@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #F7F7F7;
+}
+
+header>div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363951;
+  text-decoration: none;
+}
+
+nav ul li a:hover, .active {
+  border-bottom: 3px solid #F2CC8F;
+  padding-bottom: 6px;
+}
+
+nav.mobile {
+  display: none;
+  background-color: #efefef;
+  /* transform: translateY(-200%); */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+nav.mobile ul {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+nav.mobile li{
+  padding: 10px 0;
+}
+
+.menu-toggle {
+  display: block !important;  
+  /* transform: translateY(0) !important; */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 1px solid #3D405B;
+  border-radius: 4px;
+} 
+
+.d-none {
+  display: block;
+}
+
+.d-block {
+  display: none;
+}
+
+header>section.hero {
+  width: 95%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 37px;
+}
+
+header>section.hero>div:first-child {
+  padding-right: 2rem;
+  margin-top: 130px;
+}
+
+header>section.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+div.welcome {
+  display: flex;
+  align-items: center;
+}
+
+div.welcome div {
+  width: 44px;
+  height: 4px;
+  background: #F2CC8F;
+  margin-right: 12px;
+}
+
+header>section.hero h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+header>section.hero h3 {
+  width: 80%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 82px;
+  color: #1E202D;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+header>section.hero p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #50536B;
+}
+
+header>section.hero a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #3D405B;
+  border-radius: 4px;
+  padding: 1rem 39px;
+}
+
+header>section.hero div.book-now {
+  margin-top: 32px;
+}
+
+.facilities {
+  /* margin-top: 118px; */
+  margin-right: auto;
+}
+
+.facilities>div {
+  /* padding-right: 10% !important; */
+  margin-top: 0 !important;
+  padding: 5rem 0 !important;
+}
+
+.facilities h3 {
+  width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: .7fr 1fr;
+  color: #FFFFFF;
+  clear: both;
+  background: #1E202D;
+  padding: 47px 10% 109px;
+}
+
+footer div.logo {
+  padding-bottom: 30px;
+}
+
+footer div.social-links img {
+  border: 1px solid rgba(229, 229, 229, 0.2);
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 20px;
+}
+
+footer form {
+  margin-top: 56px;
+}
+
+footer form label {
+  display: block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+footer form input[type="email"] {
+  border: 1px solid rgba(229, 229, 229, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px 0px 0px 4px;
+  background: #1E202D;
+  padding: 16px 20px;
+}
+
+footer form input[type="email"]::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #E5E5E5;
+}
+
+footer form input[type="submit"] {
+  position: relative;
+  left: -4px;
+  background: #F3D19A;
+  border-radius: 0px 4px 4px 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 40px;
+  padding-bottom: 16px;
+  color: #3D405B;
+}
+
+footer h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+footer a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-bottom: 12px;
+}
+
+footer div.links:last-child {
+  margin-top: 41px;
+}
+
+footer div.link-grid-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6rem;
+}
+
+.d-flex {
+  display: flex !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
