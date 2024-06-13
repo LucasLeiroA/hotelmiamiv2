@@ -183,6 +183,9 @@ hr{
     footer{
         margin-top: 150px;
     }
+    .contact-text-container{
+        margin-bottom: 60px;
+    }
 }
 @media screen and (max-width: 768px) {
     .inner-contact-main{
@@ -193,8 +196,9 @@ hr{
         margin: 0;
     }
     .contact-text-container{
-        margin: 0;
+        margin-bottom: 150px;
     }
+    
     .input-field input[type=text], input[type=email], input[type=tel], textarea {
         width: 100%;
     }
