@@ -1,4 +1,41 @@
+
+
+
 /* Media Queries */
+.book-now {
+  margin-top: 30px;
+  display: inline-block; /* Asegura que el contenedor respete el tamaño del botón */
+  overflow: hidden; /* Evita que la animación se desborde */
+  display: inline-block; /* Importante para aplicar la animación correctamente */
+  animation: pulse 2s infinite; 
+}
+
+.book-now a {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #3D405B;
+  border-radius: 4px;
+  padding: 1rem 39px;
+  display: inline-block; /* Importante para aplicar la animación correctamente */
+}
+
+/* Animación de latido */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -87,3 +124,5 @@
     width: 100%;
   }
 }
+
+

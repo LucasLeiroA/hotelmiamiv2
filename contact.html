@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CASA | Contact Us</title>
+  <title>Hotel Miami | Contact Us</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,65 +24,52 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="riri_facilities.html">Instalaciones</a></li>
           <li><a href="room.html">Habitaciones</a></li>
-          <li><a href="contact.html" class="active">Contactanos</a></li>
+          <li><a href="contact.html" class="active">Contáctanos</a></li>
         </ul>
       </nav>
 
       <button class="d-block d-md-none toggle-btn" onclick="mobileMenuToggle()">
         &#9776;
       </button>
-
-      </div>
-      <nav class="mobile">
-        <ul class="justify-center flex-column">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="riri_facilities.html">Instalaciones</a></li>
-          <li><a href="room.html">Habitaciones</a></li>
-          <li><a href="contact.html" class="active">Contactanos</a></li>
-        </ul>
-      </nav>
+    </div>
+    <nav class="mobile">
+      <ul class="justify-center flex-column">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="riri_facilities.html">Instalaciones</a></li>
+        <li><a href="room.html">Habitaciones</a></li>
+        <li><a href="contact.html" class="active">Contáctanos</a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <main class="contact-main">
     <div class="inner-contact-main">
       <div class="contact-text-container">
-          <h2>Contact Us</h2>
-          <h3>Wouldn't it be Amazing to Meet You</h3>
-
-          <P class="h3-pragraph">Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua.Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit</P>
-
-          <h4 class="london-branch">London Branch
-          <p class="h4-paragraph">Near Railway Crossing, Ilupeju, Agege, Lagos</p>
-          </h4>
-      
-          <h4 class="ogun-branch">Ogun Branch
-          <p class="h4-paragraph">Near Railway Crossing, Ilupeju, Agege, Lagos</p>
-          </h4>
+        <h2>Contáctanos</h2>
+        <h3>¡Nos encantaría conocerte!</h3>
+        <p class="h3-pragraph">En Hotel Miami, nuestro mayor deseo es crear experiencias memorables para cada uno de nuestros huéspedes. Nos dedicamos a ofrecer un servicio excepcional en un ambiente acogedor y confortable. Te invitamos a descubrir un oasis de tranquilidad donde cada detalle está cuidadosamente pensado para tu disfrute. Sumérgete en una experiencia única y deja que nos encarguemos de hacer tu estadía inolvidable.</p>
       </div>
       <hr>
       <div class="contact-form-container">
         <div class="inner-contact-form-container">
-          <h4>You can also drop a message for us</h4>
-            
-            <form action="" id="form-box">
-                <div class="input-field">
-                  <input type="text" name="fullName" placeholder="Full Name" id="fullname">
-                </div>
-                <div class="input-field">
-                  <input type="email" name="email" placeholder="Email Address" id="fullname">
-                </div>
-                <div class="input-field">
-                  <input type="tel" name="phoneNumber" placeholder="Phone Number" id="fullname">
-                </div>
-                <div class="input-field">
-                  <textarea name="message" placeholder="Message" id="message" ></textarea>
-                </div>
-                <div class="input-field">
-                  <input type="submit" value="SEND">
-                </div>
+          <h4>También puedes dejarnos un mensaje</h4>
+
+          <form action="" id="contact-form">
+            <div class="input-field">
+              <input type="text" name="fullName" placeholder="Nombre Completo" id="fullName" required>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Correo Electrónico" id="email" required>
+            </div>
+            <div class="input-field">
+              <input type="tel" name="phoneNumber" placeholder="Número de Teléfono" id="phoneNumber" required>
+            </div>
+            <div class="input-field">
+              <textarea name="message" placeholder="Mensaje" id="message" required></textarea>
+            </div>
+            <div class="input-field">
+              <input type="submit" value="ENVIAR" class="submit-btn">
+            </div>
           </form>
         </div>
       </div>
@@ -93,56 +81,108 @@
       <div class="logo">
         <img src="./assets/svg/logo-light.svg" alt="logo">
       </div>
-
-      <div class="social-links">
-        <a href="#"><img src="./assets/svg/carbon_logo-twitter.svg" alt="twitter icon"></a>
-        <a href="#"><img src="./assets/svg/bx_bxl-linkedin.svg" alt="twitter icon"></a>
-        <a href="#"><img src="./assets/svg/bx_bxl-facebook.svg" alt="twitter icon"></a>
+      <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6867.640763741451!2d-65.2073951!3d-26.822312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c161f33f1e5%3A0xfcfd2fa5b866a35c!2sHOTEL%20MIAMI!5e0!3m2!1sen!2sus!4v1623566656121!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-
-      <form action="">
-        <label for="email">Subscribe to our Newsletter</label>
-        <div>
-          <input type="email" name="email" placeholder="Email Address">
-          <input type="submit" name="submit" value="send">
-        </div>
-      </form>
     </div>
 
     <div class="link-grid-col">
       <div>
         <h4>About Us</h4>
         <div class="d-flex flex-column links">
-          <a href="#">Terms &amp; Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">About Us</a>
-          <a href="#">Locations</a>
+          <a href="https://www.google.com/maps/place/HOTEL+MIAMI/@-26.8223072,-65.2099754,17z/data=!4m20!1m10!3m9!1s0x94225c161f33f1e5:0xfcfd2fa5b866a35c!2sHOTEL+MIAMI!5m2!4m1!1i2!8m2!3d-26.822312!4d-65.2073951!16s%2Fg%2F1ts30c1n!3m8!1s0x94225c161f33f1e5:0xfcfd2fa5b866a35c!5m2!4m1!1i2!8m2!3d-26.822312!4d-65.2073951!16s%2Fg%2F1ts30c1n?entry=ttu">Ubicacion</a>
+          <a href="https://www.booking.com/hotel/ar/miami.es.html?aid=318615&label=New_English_EN_AR_26768406265-zhKTd5CW4aOgR06H6ORZCAS217291422469%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-912298705561%3Alp1000116%3Ali%3Adec%3Adm&sid=ec9a2c95a24db349964b2a12c62c842d&dest_id=-1013611;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1718286060;srpvid=380a6033c39d042b;type=total;ucfs=1&">Reserva Ahora</a>
+          <a href="./contact.html">Contactanos</a>
         </div>
       </div>
 
       <div>
-        <h4>Suites</h4>
+        <h4>Habitaciones</h4>
         <div class="d-flex flex-column links">
-          <a href="#">London Standard</a>
-          <a href="#">Beach View</a>
-          <a href="#">Club Suites</a>
-          <a href="#">Mavellous Crimb</a>
+          <a href="./room.html">Habitación Estándar</a>
+          <a href="./room.html">Habitación Doble</a>
+          <a href="./room.html">Habitación Familiar</a>
         </div>
       </div>
 
       <div>
+        <h4>Turismo</h4>
         <div class="d-flex flex-column links">
-          <a href="#">London Standard</a>
-          <a href="#">Beach View</a>
-          <a href="#">Club Suites</a>
-          <a href="#">Mavellous Crimb</a>
+          <a href="https://www.tucumanturismo.gob.ar/circuito-las-yungas/58/168/san-javier">Cerro San Javier</a>
+          <a href="https://www.tucumanturismo.gob.ar/circuito-valles-calchaquies/61/169/tafi-del-valle">Tafí del Valle</a>
+          <a href="https://www.tucumanturismo.gob.ar/sitios-arqueologicos/19/53/ciudad-sagrada-de-quilmes">Ruinas de Quilmes</a>
+          <a href="https://www.tucumanturismo.gob.ar/ciudad-historica/57/206/casa-historica-de-la-independencia">casa historica de tucuman</a>
         </div>
       </div>
     </div>
-
   </footer>
-  
+  <div class="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=3815847361&text=Hola%20quiero%20reservar%20una%20habitacion" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+ </div>
   <script src="./js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init('BrlJNsPl27qygISG_'); // Reemplaza con tu identificador de usuario de EmailJS
+  
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevenir el envío por defecto
+  
+        // Recolectar los datos del formulario
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const message = document.getElementById('message').value;
+  
+        // Configurar el servicio de EmailJS
+        const templateParams = {
+          from_name: fullName,
+          from_email: email,
+          phone_number: phoneNumber,
+          message: message
+        };
+  
+        // Enviar el correo electrónico
+        emailjs.send('service_dmpokdb', 'template_wthoygc', templateParams)
+          .then(function(response) {
+            console.log('Correo electrónico enviado correctamente', response);
+            // Alerta personalizada
+            showAlert('¡Mensaje enviado correctamente!', 'success');
+            // Limpiar el formulario después del envío
+            document.getElementById('contact-form').reset();
+          }, function(error) {
+            console.error('Error al enviar el correo electrónico', error);
+            // Alerta personalizada
+            showAlert('Ocurrió un error al enviar el mensaje', 'error');
+          });
+      });
+  
+      // Función para mostrar alerta personalizada
+      function showAlert(message, type) {
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('custom-alert', type);
+        alertDiv.textContent = message;
+  
+        document.body.appendChild(alertDiv);
+  
+        setTimeout(function() {
+          alertDiv.classList.add('show'); // Agregar clase para mostrar la alerta
+          setTimeout(function() {
+            alertDiv.classList.remove('show'); // Remover clase para ocultar la alerta después de 5 segundos
+            setTimeout(function() {
+              alertDiv.remove(); // Eliminar la alerta del DOM después de ocultarla
+            }, 300); // Esperar un poco antes de eliminar para asegurar la animación
+          }, 5000); // Mostrar la alerta durante 5 segundos
+        }, 100); // Pequeña espera antes de mostrar la alerta
+      }
+    })();
+  </script>
+  
+  
+  
 </body>
 
 </html>

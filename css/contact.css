@@ -199,3 +199,53 @@ hr{
         width: 100%;
     }
 }
+/* En el archivo css/contact.css */
+
+.input-field {
+    margin-top: 20px; /* Ejemplo de margen superior */
+  }
+  
+  .submit-btn {
+    background: #3D405B; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Borde ninguno */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Borde redondeado */
+  }
+
+  .input-field{
+    text-align: center;
+    
+  }
+
+
+  /* Estilos para la alerta personalizada */
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .custom-alert.success {
+    background-color: #4CAF50; /* Verde para éxito */
+  }
+  
+  .custom-alert.error {
+    background-color: #F44336; /* Rojo para error */
+  }
+  
+  .custom-alert.show {
+    opacity: 1;
+  }
+  
