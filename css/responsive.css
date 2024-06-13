@@ -18,7 +18,10 @@
     margin-top: 3rem;
   }
   footer div.link-grid-col {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .link-grid-col h4{
+    margin-top: 20px;
   }
   /* Utilities */
   .d-none {
@@ -27,6 +30,13 @@
   .d-block {
     display: block !important;
   }
+}
+
+#map-container {
+  width: 100%;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  margin-bottom: 20px; /* Espacio inferior para separar del contenido del footer */
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -72,5 +82,8 @@
   }
   footer div.link-grid-col {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #map-container iframe{
+    width: 100%;
   }
 }
